@@ -21,6 +21,7 @@ print.error('error', 42, '\n')
 print.success('success', 42, '\n')
 print.warning('warning', 42, '\n')
 print.info('info', 42, '\n')
+print.lines(lines=['line 1', 'line 2', 42, set()])
 
 # if you're against shadowing builtin print() - pass kwarg explicit=True
 # so the PrintUtils instance will be returned explicitly and there will be

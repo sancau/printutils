@@ -122,6 +122,11 @@ class PrintUtils:
         args = ('[E]', ) + args
         self.python_print(BRIGHT + ERROR + self._build_contains(args) + RESET)
 
+    @print_utils_behavior
+    def lines(self, *args, lines=None):
+        for line in lines:
+            self.python_print(*args, line)
+
 
 def init(*, name=None, config=DEFAULT_CONFIG, explicit=False):
     """
